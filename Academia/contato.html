@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Academia Bulls</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.ss">
+</head>
+<body>
+    <header>
+        <div class="caixa">
+           <h1><img src="touro.png"></h1>
+           <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Produtos.html">Produtos</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+           </nav> 
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" name="" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" cols="30" rows="10" required></textarea>
+
+            <fieldset>
+                <legend>
+                    Como prefere o nosso contato?
+                </legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Qual horario prefere ser atendido?
+                </legend>
+                <select>
+                    <option>Manha</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox">Gostaria de receber
+            nossas novidades por email?</label>
+
+            <input type="submit" value="Enviar formulario" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dias</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Semana</td>
+                    <td>06 ~ 23hs</td>
+                </tr>
+                <tr>
+                    <td>Sabado</td>
+                    <td>09 ~ 14hs</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="touro.png">
+        <p class="copyright">&copy; Copyright Academia Bulls - 2022</p>
+</footer>
+
+</body>
+</html>
